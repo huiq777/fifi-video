@@ -1,0 +1,14 @@
+{
+  "name": "first-light",
+  "private": true,
+  "type": "module",
+  "description": "FIRST LIGHT: a 106-second film whose every frame and every sound is computed by code",
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "@fontsource/noto-sans-sc": "5.3.1",
+    "@fontsource/noto-serif-sc": "5.3.1",
+    "puppeteer-core": "24.43.1",
+    "ws": "^8.22.2"
+  }
+}

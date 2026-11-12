@@ -16,7 +16,6 @@ Video tools that are just code. Every frame is HTML / Canvas / JS, rendered fram
 | | BGM & sound effects | soon |
 | | Cover prompts | soon |
 | | Titles | soon |
-| | [prompts/](prompts/)<br>Full one-prompt videos | ✅ |
 
 ## Why these components
 
@@ -39,6 +38,15 @@ bash scripts/build.sh ../my-video      # frames → sound → my-video.mp4
 ```
 
 Needs Node 18+, Google Chrome, Python 3 (numpy), ffmpeg.
+
+## Showcase films (separate from the toolkit)
+
+[`animation/`](animation/) holds a few finished films made by AI, each with its full source code or the prompt behind it. They are not part of fifi-video: they don't use `motion/`, and nothing in this repo depends on them. **You don't need them to use the toolkit**, so you can clone without that folder:
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/huiq777/fifi-video.git
+cd fifi-video && git sparse-checkout set motion
+```
 
 ## Contributing
 

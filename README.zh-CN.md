@@ -16,7 +16,6 @@
 | | 后期 BGM、音效 | 即将开放 |
 | | 封面 prompt | 即将开放 |
 | | 标题 | 即将开放 |
-| | [prompts/](prompts/)<br>一段 prompt 出一整支片 | ✅ |
 
 ## 这些组件有什么不一样
 
@@ -39,6 +38,15 @@ bash scripts/build.sh ../my-video      # 逐帧渲染 → 音效 → my-video.mp
 ```
 
 需要 Node 18+、Google Chrome、Python 3（numpy）、ffmpeg。
+
+## 展示作品（和工具无关）
+
+[`animation/`](animation/) 放的是几支 AI 做好的成片，每支附完整源码或当时用的 prompt。它们不属于 fifi-video：不用 `motion/`，repo 里也没有任何东西依赖它们。**用这套工具不需要它们**，可以这样 clone，不下载这个文件夹：
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/huiq777/fifi-video.git
+cd fifi-video && git sparse-checkout set motion
+```
 
 ## 参与贡献
 

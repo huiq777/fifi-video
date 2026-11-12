@@ -5,7 +5,7 @@ Instructions for coding agents working in this repo (Claude Code, Codex, Cursor,
 ## Repo map
 
 - `motion/`: animation components + render pipeline. **Start here for any animation / motion-graphics request.** Read `motion/SKILL.md` first.
-- `prompts/`: self-contained prompts, each makes one finished video. Copy one as-is if the user asks for that video.
+- `animation/`: showcase films made by AI (full source code or one prompt each). Not part of the toolkit and unrelated to `motion/`. Ignore it unless the user asks about one of these films; don't copy code from it into motion projects.
 - Other modules (rough cut, BGM / SFX, covers, titles) are not released yet. Don't invent them.
 
 ## Making a video with motion/
